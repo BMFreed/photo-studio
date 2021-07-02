@@ -2,6 +2,7 @@
  "plans":[
         {
             "name": "Individual Sessions",
+            "icon": "/img/plans/individual_icon_11408.png",
             "perks":[
                 "Studio Sessions", 
                 "Outdoor Sessions", 
@@ -10,6 +11,7 @@
         },
         {
             "name": "Group Sessions",
+            "icon": "/img/plans/companies_icon_11410.png",
             "perks":[
                 "Group On-Sites", 
                 "Corporate Accounts"

@@ -4,7 +4,11 @@ function PricingPlans (props) {
     let data = props.data.plans;
     const plan = data.map(
         ((item, index) =>
-            <Plan key={index} title={item.name} perks={item.perks}/>
+            <Plan 
+                key={index} 
+                title={item.name} 
+                icon={item.icon}
+                perks={item.perks}/>
         )
     )
     return (

@@ -1,6 +1,6 @@
 import PhotoCard from './__PhotoCard/PhotoCard'
 
-function Services() {
+function Services(props) {
     const service = [
         "All",
         "Modeling",
@@ -12,7 +12,6 @@ function Services() {
         "Company",
         "Office"
     ]
-
     const service_list = service.map(
         ((item, index) => <li key={index}>{item}</li>)
     )
@@ -23,16 +22,16 @@ function Services() {
             <ul>{service_list}</ul>
             <section>
                 <ul>
-                    <PhotoCard/>
-                    <PhotoCard/>
-                    <PhotoCard/>
-                    <PhotoCard/>
+                    <PhotoCard img={"/img/services/company/img_11789.jpg"}/>
+                    <PhotoCard img={"/img/services/company/img_11790.jpg"}/>
+                    <PhotoCard img={"/img/services/company/img_11794.jpg"}/>
+                    <PhotoCard img={"/img/services/company/img_11796.jpg"}/>
                 </ul>
-                <button disabled><img src="" alt="Back" /></button>
-                <button><img src="" alt="Forward" /></button>
+                <button disabled><img src={process.env.PUBLIC_URL + "/img/ui/arrow_copy_11284.png"} alt="Back" /></button>
+                <button><img src={process.env.PUBLIC_URL + "/img/ui/arrow_copy_2_11285.png"} alt="Forward" /></button>
             </section>
             <section>
-                <img src="" alt="Active" />
+                <img src={process.env.PUBLIC_URL + "/img/services/company/img_11789.jpg"} alt="Forward" />
             </section>
         </section>
     )

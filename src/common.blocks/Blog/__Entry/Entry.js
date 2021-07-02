@@ -1,14 +1,14 @@
 function Entry(props) {
     return (
-        <a href="#blog">
+        <a href="/#">
             <li>
                 <figure>
-                    <img src={props.img} alt="" />
+                    <img src={process.env.PUBLIC_URL + props.image} alt="" />
                     <figcaption>{props.title}</figcaption>
                 </figure>
                 <div>
-                    <span>{props.com} comments</span>
-                    <time datetime={props.datetime}></time>
+                    <span>{props.comments} comments</span>
+                    <time dateTime={props.datetime}>{props.date_text}</time>
                 </div>
             </li>
         </a>

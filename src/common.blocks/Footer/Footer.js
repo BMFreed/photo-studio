@@ -17,11 +17,11 @@ function Footer () {
             <section>
                 <h3>Resources</h3>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipis.</li>
-                    <li>Donec nisi enim, finibus non malesuada vitae.</li>
-                    <li>Nulla eget fringilla libero, ut ultricies neque.</li>
-                    <li>Morbi id aliquet sem. Ut mattis diam sit amet.</li>
-                    <li>Curabitur eu efficitur quam. Fusce interdum sem.</li>
+                    <li><a href="/#">Lorem ipsum dolor sit amet, consectetur adipis.</a></li>
+                    <li><a href="/#">Donec nisi enim, finibus non malesuada vitae.</a></li>
+                    <li><a href="/#">Nulla eget fringilla libero, ut ultricies neque.</a></li>
+                    <li><a href="/#">Morbi id aliquet sem. Ut mattis diam sit amet.</a></li>
+                    <li><a href="/#">Curabitur eu efficitur quam. Fusce interdum sem.</a></li>
                 </ul>
             </section>
             <section>
@@ -48,6 +48,8 @@ function Footer () {
                     <li>Yelp</li>
                 </ul>
             </section>
+            <section><span>© 2020. All rights reserved.</span></section>
+            <section><a href="/#">Privacy Policy</a></section>
         </footer>
     )
 }

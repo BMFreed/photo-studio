@@ -7,6 +7,7 @@ function Plan (props) {
     )
     return (
         <li>
+            <img src={process.env.PUBLIC_URL + props.icon} alt="icon" />
             <h3>{props.title}</h3>
             <ol>{perks}</ol>
             <a id="sm" href="#sm">See more</a>

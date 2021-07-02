@@ -12,31 +12,31 @@ function MoreInfo () {
                     <ul>
                         <li>
                             <figure>
-                                <img src="" alt="Tip" />
+                                <img src={process.env.PUBLIC_URL + "/img/tips/camera_icon_11827.png"} alt="Tip" />
                                 <figcaption>Go professional, it’s worth it, because cheap looks cheap.</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="Tip" />
+                                <img src={process.env.PUBLIC_URL + "/img/tips/mirror_icon_11822.png"} alt="Tip" />
                                 <figcaption>Make sure it looks like you, not like you want to be.</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="Tip" />
+                                <img src={process.env.PUBLIC_URL + "/img/tips/eyes_icon_11817.png"} alt="Tip" />
                                 <figcaption>It’s all about the eyes and what’s behind them.</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="Tip" />
+                                <img src={process.env.PUBLIC_URL + "/img/tips/studio_icon_11812.png"} alt="Tip" />
                                 <figcaption>Control framing, lighting &amp; background.</figcaption>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="" alt="Tip" />
+                                <img src={process.env.PUBLIC_URL + "/img/tips/tshirt_icon_11807.png"} alt="Tip" />
                                 <figcaption>Stay chill with clothing &amp; makeup, you must be you.</figcaption>
                             </figure>
                         </li>
