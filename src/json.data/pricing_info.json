@@ -1,0 +1,19 @@
+{
+ "plans":[
+        {
+            "name": "Individual Sessions",
+            "perks":[
+                "Studio Sessions", 
+                "Outdoor Sessions", 
+                "In-Office Sessions"
+            ]
+        },
+        {
+            "name": "Group Sessions",
+            "perks":[
+                "Group On-Sites", 
+                "Corporate Accounts"
+            ]
+        }
+    ]
+}
