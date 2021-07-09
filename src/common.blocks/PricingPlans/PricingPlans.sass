@@ -1,0 +1,53 @@
+.pricing-plans
+    &__list
+        margin-top: 100px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        
+    &__plan
+        @extend %flex
+        flex-direction: column
+        align-items: center
+        padding: 0 $noclip
+        white-space: nowrap
+
+        &:nth-child(odd)
+            @extend %dark-block
+
+        &:nth-child(even)
+            background-color: $secondary
+
+    &__icon, &__perks, &__btn
+        margin-top: 80px
+
+    &__icon
+        height: 40px
+
+    &__title
+        margin-top: 20px
+        font-size: 30px
+        text-transform: uppercase
+
+    &__perks
+        list-style: none
+        text-align: center
+
+    &__perk
+        margin-bottom: 38px
+        @extend %flex
+
+    &__perk-number
+        display: block
+        margin-right: 40px
+        font-size: 80px
+        min-width: 49px
+        font-weight: 700
+        opacity: 0.2
+
+    &__btn
+        margin-bottom: 102px
+        padding:
+            left: 67px
+            right: 67px
+        
+            

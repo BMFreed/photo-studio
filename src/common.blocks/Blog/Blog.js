@@ -14,11 +14,13 @@ function Blog(props) {
         )
     )
     return (
-        <section id="blog">
-            <h2>Our Blog</h2>
-            <h3>Check our latest news.</h3>
-            <ul>{entry}</ul>
-            <button>See All Posts</button>
+        <section className="blog" id="blog">
+            <div className="blog__container container">
+                <h2 className="blog__header header-secondary margin-reset">Our Blog</h2>
+                <p className="blog__header-caption margin-reset">Check our latest news.</p>
+                <ul className="blog__entries u-list">{entry}</ul>
+                <button className="blog__btn button">See All Posts</button>
+            </div>
         </section>
     )
 }

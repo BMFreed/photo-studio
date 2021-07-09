@@ -1,0 +1,59 @@
+.clients
+    @extend %dark-block
+    padding:
+        top: 100px
+        bottom: 140px
+
+    &__container
+        @extend %flex
+        flex-direction: column
+
+    &__header
+        margin-bottom: 27px
+
+    &__header-caption
+        margin-bottom: 65px
+
+    &__list
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+    //Client cards
+
+    &__card
+        @extend %flex
+        flex-direction: column
+        width: 490px
+
+    &__photo
+        width: 490px
+        height: 490px
+        background-color: $image-holder
+
+    &__name-and-rating
+        display: flex
+        width: 100%
+        justify-content: space-between
+        align-items: center
+        margin: 
+            top: 30px
+            bottom: 50px
+
+    &__name
+        font-size: 16px
+        text-transform: uppercase
+
+    &__quote
+        font-style: italic
+        display: block
+        max-width: 400px
+        line-height: 32px
+
+    &__quote-container
+
+    &__quotation-mark
+        opacity: 0.1
+        position: relative
+        bottom: 76px
+        right: 40px

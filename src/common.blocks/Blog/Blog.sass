@@ -1,0 +1,51 @@
+.blog
+    
+    &__container
+        @extend %flex
+        flex-direction: column
+
+    &__header
+        margin-top: 90px
+
+        &-caption
+            margin-top: 14px
+
+    &__entries
+        margin-top: 80px
+        gap: 20px
+
+    &__entry
+        width: 386px
+        background-color: $secondary
+        
+        &-text
+            padding: 29px 21px
+            min-height: 200px
+            @extend %flex
+            justify-content: space-between
+            flex-direction: column
+
+        &-title
+            font:
+                size: 20px
+                weight: 600
+            text-transform: uppercase
+            line-height: 28px
+
+        &-bottom-data
+            width: 100%
+            @extend %flex
+            justify-content: space-between
+
+        &-comments
+            @extend %flex
+            gap: 9px
+            color: $accent_bright
+
+    &__btn
+        padding:
+            left: 53px
+            right: 53px
+        margin:
+            top: 60px
+            bottom: 120px

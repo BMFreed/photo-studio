@@ -12,9 +12,9 @@ function PricingPlans (props) {
         )
     )
     return (
-        <section>
-            <h2>Pricing Plans</h2>
-            <ul>{plan}</ul>
+        <section className="pricing-plans">
+            <h2 className="hidden">Pricing Plans</h2>
+            <ul className="u-list pricing-plans__list">{plan}</ul>
         </section>
     )
 }

@@ -1,0 +1,34 @@
+.header
+    white-space: nowrap
+    font-size: 16px
+    &__container
+        max-width: 1780px
+        height: 100px
+        padding: 0 $noclip
+        @extend %flex
+        justify-content: space-between
+
+    &__section-list
+        gap: 38px
+        margin:
+            left: $noclip
+            right: $noclip*2
+        font-weight: 500
+
+    &__sm-list
+        gap: 20px
+        margin-left: $noclip
+
+    &__btn
+        box-sizing: border-box
+        padding: 11px 22px 11px 22px
+
+    &__left-content, &__right-content
+        @extend %flex
+        justify-content: space-between
+    
+    &__left-content
+        width: 838px
+
+    &__right-content
+        width: 344px

@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header/>
-      <main>
+      <main className="display-fix">
         <Banner/>
         <PricingPlans data={pricing_info}/>
         <Map/>

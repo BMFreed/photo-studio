@@ -1,2 +1,52 @@
-iframe
-    border: 0
+.map
+    height: 560px
+
+    &__studio-search
+        position: absolute
+        box-sizing: border-box
+        background-color: $primary
+        width: 700px
+        margin-top: 160px
+        padding: 49px 46px
+        z-index: 1
+
+    &__title
+        margin-bottom: 28px
+
+    &__inputs
+        margin-top: 25px
+
+    &__search-input, &__btn
+        margin: 0
+        padding:
+            top: 15px
+            bottom: 15px
+
+    &__search-input
+        border: 0px solid $secondary
+        background-color: $secondary
+        box-sizing: border-box
+        border-radius: $main_b-radius
+        border-top-right-radius: 0px
+        border-bottom-right-radius: 0px
+        width: 204px
+        padding:
+            left: 15px
+            right: 15px
+
+        &:active, &:hover, &:focus
+            outline: 0
+
+    &__btn
+        padding:
+            left: 48px
+            right: 48px
+        border-top-left-radius: 0px
+        border-bottom-left-radius: 0px
+
+
+    &__google-maps
+        position: relative
+        border: 0
+        height: 100%
+        z-index: 0

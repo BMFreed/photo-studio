@@ -1,0 +1,94 @@
+.more-info
+    background-color: $secondary
+    margin-top: 150px
+
+    &__container
+        @extend %flex
+        flex-direction: column
+        justify-content: space-between
+        padding:
+            top: 74px
+            bottom: 100px
+
+    &__top-content
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+
+    //Top content
+
+
+    //Headshots
+
+    &__headshots
+        width: 614px
+        margin-right: $noclip*2
+
+    &__headshots-header
+        margin-bottom: 34px
+
+    &__headshots-caption
+        line-height: 32px
+        position: relative
+
+    &__arrow
+        position: absolute
+        margin: 
+            top: 35px
+            left: 9px
+
+
+    //Tips
+
+    &__tips
+        width: 716px
+
+    &__tips-header
+        margin-bottom: 62px
+
+    &__tip-list
+        font-size: 16px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-areas: "A B" "C D" "E F"
+        column-gap: 110px
+        row-gap: 60px
+        margin-left: 10px
+
+    &__tip
+        @extend %flex
+        img
+            max-height: 61px
+            max-width: 76px
+            margin-right: 25px
+
+        &_move-right
+            grid-area: F
+
+    &__tip-caption
+        max-width: 230px
+        line-height: 24px
+
+
+    //Bottom content
+    
+    &__bottom-content
+        margin-right: 240px
+
+    &__headshot-services
+        width: 1060px
+        margin-top: 15px
+        padding: 60px 80px
+        box-sizing: border-box
+        @extend %dark-block
+
+    &__bottom-title, &__bottom-paragraph:nth-child(2)
+        margin-bottom: 46px
+
+    &__bottom-title
+        font-size: 22px
+        text-transform: uppercase
+
+    &__bottom-paragraph
+        line-height: 32px

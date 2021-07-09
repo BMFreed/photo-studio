@@ -13,10 +13,12 @@ function Clients(props) {
     )
 
     return (
-        <section>
-            <h2>Clients love us</h2>
-            <h3>We have formed true friendships.</h3>
-            <ul>{client}</ul>
+        <section className="clients">
+            <div className="clients__container container">
+                <h2 className="clients__header header-secondary margin-reset">Clients love us</h2>
+                <p className="clients__header-caption margin-reset">We have formed true friendships.</p>
+                <ul className="clients__list u-list">{client}</ul>
+            </div>
         </section>
     )
 }

@@ -1,0 +1,42 @@
+.about
+    color: $primary
+    background-color: $image-holder
+    height: 401px
+    @extend %flex
+    justify-content: center
+    position: relative
+    overflow: hidden
+
+    &__border
+        width: 1868px
+        height: 359px
+        border: 2px solid transparentize($primary, 0.84)
+        margin: 
+            left: $noclip/3
+            right: $noclip/3
+        position: relative
+        z-index: 1
+
+    &__container
+        @extend %flex
+        height: 100%
+        justify-content: space-between
+        position: relative
+
+    &__header
+        min-width: 672px
+        max-width: 1400px
+        margin-right: $noclip
+
+    &__btn
+        white-space: nowrap
+        padding:
+            left: 68px
+            right: 68px
+
+    &__background
+        filter: brightness(0.4)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 0
