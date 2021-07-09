@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/photo-studio/static/css/main.2c22d746.chunk.css",
+    "main.js": "/photo-studio/static/js/main.45c39c52.chunk.js",
+    "main.js.map": "/photo-studio/static/js/main.45c39c52.chunk.js.map",
+    "runtime-main.js": "/photo-studio/static/js/runtime-main.91a8aed6.js",
+    "runtime-main.js.map": "/photo-studio/static/js/runtime-main.91a8aed6.js.map",
+    "static/js/2.a4b36489.chunk.js": "/photo-studio/static/js/2.a4b36489.chunk.js",
+    "static/js/2.a4b36489.chunk.js.map": "/photo-studio/static/js/2.a4b36489.chunk.js.map",
+    "static/js/3.c624c17d.chunk.js": "/photo-studio/static/js/3.c624c17d.chunk.js",
+    "static/js/3.c624c17d.chunk.js.map": "/photo-studio/static/js/3.c624c17d.chunk.js.map",
+    "index.html": "/photo-studio/index.html",
+    "static/css/main.2c22d746.chunk.css.map": "/photo-studio/static/css/main.2c22d746.chunk.css.map",
+    "static/js/2.a4b36489.chunk.js.LICENSE.txt": "/photo-studio/static/js/2.a4b36489.chunk.js.LICENSE.txt",
+    "static/media/App.sass": "/photo-studio/static/media/Tahu.32be0a0d.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91a8aed6.js",
+    "static/js/2.a4b36489.chunk.js",
+    "static/css/main.2c22d746.chunk.css",
+    "static/js/main.45c39c52.chunk.js"
+  ]
+}
