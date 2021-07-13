@@ -1,30 +1,79 @@
 {   
-    "All": [],
-    "Modeling": [
-
-    ],
-    "Acting": [
-
-    ],
-    "Corporate": [
-
-    ],
-    "Business": [
-
-    ],
-    "Professional": [
-
-    ],
-    "Group": [
-        
-    ],
-    "Company": [
-        "/img/services/company/img_11789.jpg",
-        "/img/services/company/img_11790.jpg",
-        "/img/services/company/img_11794.jpg",
-        "/img/services/company/img_11796.jpg"
-    ],
-    "Office": [
-        
+    "services": [
+        {
+            "name": "All"
+        },
+        {
+            "name": "Modelling",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Acting",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Corporate",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Business",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Professional",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Group",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Company",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Office",
+            "imageList": [
+                "/img/services/company/img_11789.jpg",
+                "/img/services/company/img_11790.jpg",
+                "/img/services/company/img_11794.jpg",
+                "/img/services/company/img_11796.jpg"
+            ]
+        }
     ]
 }

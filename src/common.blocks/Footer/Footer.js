@@ -1,4 +1,4 @@
-function Footer () {
+function Footer() {
     return (
         <footer className="footer">
             <div className="footer__container container">
@@ -9,11 +9,31 @@ function Footer () {
                     <section className="footer__links">
                         <h3 className="footer__section-title margin-reset">Links</h3>
                         <ul className="footer__links-list u-list">
-                            <li><a className="link" href="##">Individuals</a></li>
-                            <li><a className="link" href="##">Companies</a></li>
-                            <li><a className="link" href="##">The Studio</a></li>
-                            <li><a className="link" href="##">About Us</a></li>
-                            <li><a className="link" href="##">Blog</a></li>
+                            <li>
+                                <a className="link" href="##">
+                                    Individuals
+                                </a>
+                            </li>
+                            <li>
+                                <a className="link" href="##">
+                                    Companies
+                                </a>
+                            </li>
+                            <li>
+                                <a className="link" href="##">
+                                    The Studio
+                                </a>
+                            </li>
+                            <li>
+                                <a className="link" href="##">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a className="link" href="##">
+                                    Blog
+                                </a>
+                            </li>
                         </ul>
                     </section>
                     <section className="footer__resources">
@@ -49,9 +69,12 @@ function Footer () {
                     <section className="footer__address">
                         <h3 className="footer__section-title margin-reset">Studio Inc</h3>
                         <p>
-                            125  Southern Way<br/>
-                            EH23 1SZ<br/>
-                            North Middleton, UK<br/>
+                            125 Southern Way
+                            <br />
+                            EH23 1SZ
+                            <br />
+                            North Middleton, UK
+                            <br />
                         </p>
                     </section>
                     <section className="footer__contact">
@@ -60,7 +83,9 @@ function Footer () {
                             <a className="footer__contact-link link" href="tel:1233453781">
                                 (123) 345 3781
                             </a>
-                            <a className="footer__contact-link link" href="mailto:smile@studio-inc.com">
+                            <a
+                                className="footer__contact-link link"
+                                href="mailto:smile@studio-inc.com">
                                 smile@studio-inc.com
                             </a>
                         </p>
@@ -77,11 +102,13 @@ function Footer () {
                 </div>
                 <section className="footer__add-content">
                     <span className="footer__copyright">© 2020. All rights reserved.</span>
-                    <a className="footer__policy link" href="##">Privacy Policy</a>
+                    <a className="footer__policy link" href="##">
+                        Privacy Policy
+                    </a>
                 </section>
             </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;

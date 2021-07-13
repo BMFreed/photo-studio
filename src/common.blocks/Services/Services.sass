@@ -27,6 +27,15 @@
 
     //Photo cards
 
+    &__cards, &__card-active
+        max-height: 860px
+        margin-top: 62px
+
+    &__cards
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
     &__card-list, &__main-content, &__buttons
         display: grid
         grid-template-columns: 1fr 1fr
@@ -34,9 +43,6 @@
 
     &__card
         margin: 0
-
-    &__cards, &__card-active
-        margin-top: 62px
 
     &__card, &__card-image
         width: 350px
@@ -47,12 +53,9 @@
         &-info
             display: none
 
-    &__buttons
-        margin-top: 19px
-        height: 41px
-
     &__button
         border: 0px solid $primary
+        padding: 12px 0px
         border-radius: $main_b-radius
         background-color: $secondary
         cursor: pointer
