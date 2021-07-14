@@ -1,11 +1,10 @@
+$column-slider-width: 730px
+
 .services
     &__container
         @extend %flex
         flex-direction: column
 
-
-    // Header and service select menu
-        
     &__header
         margin:
             top: 120px
@@ -24,43 +23,80 @@
         background: 0
         border: 0
 
+    &__slider
+        &-container
+            height: 830px
+            margin-top: 62px
+            @extend %flex
+            gap: 30px
 
-    //Photo cards
+        &-buttons
+            display: grid
+            grid-template-columns: 1fr 1fr
+            gap: 26px
+            width: $column-slider-width - 10px
+            height: 40px
+            position: relative
+            top: -2px
+            left: 5px
+            z-index: 2
 
-    &__cards, &__card-active
-        max-height: 860px
-        margin-top: 62px
+            & button
+                @extend %flex
+                justify-content: center
+                border: 0px solid $primary
+                border-radius: $main_b-radius
+                background-color: $secondary
+                cursor: pointer
 
-    &__cards
-        display: flex
-        flex-direction: column
-        justify-content: space-between
+                &:disabled
+                    cursor: default
+                    img
+                        opacity: 0.5
 
-    &__card-list, &__main-content, &__buttons
-        display: grid
-        grid-template-columns: 1fr 1fr
-        gap: 30px
 
-    &__card
-        margin: 0
+    //Custom slider properties for propper display
 
-    &__card, &__card-image
+    &__card-image
         width: 350px
         height: 385px
         margin: 0
         padding: 0
+    
+    .swiper
 
-        &-info
-            display: none
+        &-column-container
+            height: 100%
+            max-width: $column-slider-width
 
-    &__button
-        border: 0px solid $primary
-        padding: 12px 0px
-        border-radius: $main_b-radius
-        background-color: $secondary
-        cursor: pointer
+        &-container
+            width: 100%
+            height: 100%
+            margin-left: auto
+            margin-right: auto
+            z-index: 1
 
-        &:disabled
-            cursor: default
+        &-wrapper
+            margin: 0
+            padding: 0
+        
+
+        &-slide
+            text-align: center
+            height: calc((100% - 30px) / 2)
+            display: flex
+            justify-content: center
+            align-items: center
+
+        &-thumb
+            margin-top: 45px
+            // margin-left: 30px
+            height: 860px
+
+            li
+                width: 100%
+                height: 100%
+
             img
-                opacity: 0.5
+                width: auto
+                height: 100%

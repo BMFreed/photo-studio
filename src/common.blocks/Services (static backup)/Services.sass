@@ -1,0 +1,63 @@
+.services
+    &__container
+        @extend %flex
+        flex-direction: column
+
+
+    // Header and service select menu
+        
+    &__header
+        margin:
+            top: 120px
+            bottom: 44px
+
+    &__select-type
+        margin:
+            left: $noclip
+            right: $noclip
+        gap: 47px
+
+    &__menu-btn
+        cursor: pointer
+        margin: 0
+        padding: 0
+        background: 0
+        border: 0
+
+
+    //Photo cards
+
+    &__card-list, &__main-content, &__buttons
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+
+    &__card
+        margin: 0
+
+    &__cards, &__card-active
+        margin-top: 62px
+
+    &__card, &__card-image
+        width: 350px
+        height: 385px
+        margin: 0
+        padding: 0
+
+        &-info
+            display: none
+
+    &__buttons
+        margin-top: 19px
+        height: 41px
+
+    &__button
+        border: 0px solid $primary
+        border-radius: $main_b-radius
+        background-color: $secondary
+        cursor: pointer
+
+        &:disabled
+            cursor: default
+            img
+                opacity: 0.5
