@@ -1,16 +1,83 @@
 {
     "services": [
         {
+            "name": "All",
+            "imageList": []
+        },
+        {
+            "name": "Modelling",
+            "imageList": [
+                "/img/services/modelling/img_10000.jpg",
+                "/img/services/modelling/img_10001.jpg",
+                "/img/services/modelling/img_10002.jpg",
+                "/img/services/modelling/img_10003.jpg",
+                "/img/services/modelling/img_10004.jpg",
+                "/img/services/modelling/img_10005.jpg"
+            ]
+        },
+        {
+            "name": "Acting",
+            "imageList": [
+                "/img/services/acting/img_11000.jpg",
+                "/img/services/acting/img_11001.jpg",
+                "/img/services/acting/img_11002.jpg",
+                "/img/services/acting/img_11003.jpg"
+            ]
+        },
+        {
+            "name": "Corporate",
+            "imageList": [
+                "/img/services/corporate/img_12000.jpg",
+                "/img/services/corporate/img_12001.jpg",
+                "/img/services/corporate/img_12002.jpg",
+                "/img/services/corporate/img_12003.jpg",
+                "/img/services/corporate/img_12004.jpg",
+                "/img/services/corporate/img_12005.jpg"
+            ]
+        },
+        {
+            "name": "Business",
+            "imageList": [
+                "/img/services/business/img_13000.jpg",
+                "/img/services/business/img_13001.jpg",
+                "/img/services/business/img_13002.jpg",
+                "/img/services/business/img_13003.jpg"
+            ]
+        },
+        {
+            "name": "Professional",
+            "imageList": [
+                "/img/services/professional/img_14000.jpg",
+                "/img/services/professional/img_14001.jpg",
+                "/img/services/professional/img_14002.jpg",
+                "/img/services/professional/img_14003.jpg"
+            ]
+        },
+        {
+            "name": "Group",
+            "imageList": [
+                "/img/services/group/img_15000.jpg",
+                "/img/services/group/img_15001.jpg",
+                "/img/services/group/img_15002.jpg",
+                "/img/services/group/img_15003.jpg"
+            ]
+        },
+        {
             "name": "Company",
             "imageList": [
                 "/img/services/company/img_11789.jpg",
                 "/img/services/company/img_11790.jpg",
                 "/img/services/company/img_11794.jpg",
-                "/img/services/company/img_11796.jpg",
-                "/img/services/company/img_11789.jpg",
-                "/img/services/company/img_11790.jpg",
-                "/img/services/company/img_11794.jpg",
                 "/img/services/company/img_11796.jpg"
+            ]
+        },
+        {
+            "name": "Office",
+            "imageList": [
+                "/img/services/office/img_16001.jpg",
+                "/img/services/office/img_16002.jpg",
+                "/img/services/office/img_16003.jpg",
+                "/img/services/office/img_16004.jpg"
             ]
         }
     ]

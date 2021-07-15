@@ -11,11 +11,12 @@ function Clients(props) {
     const client = data.map((item, index) => (
         <SwiperSlide tag="li" key={index}>
             <div className="clients__card">
-                <img
-                    className="clients__photo"
-                    src={process.env.PUBLIC_URL + item.photo}
-                    alt={item.name}
-                />
+                <div className="clients__photo">
+                    <img
+                        src={process.env.PUBLIC_URL + item.photo}
+                        alt={item.name}
+                    />
+                </div>
                 <div className="clients__name-and-rating">
                     <p className="clients__name margin-reset">{item.name}</p>
                     <div className="clients__rating">

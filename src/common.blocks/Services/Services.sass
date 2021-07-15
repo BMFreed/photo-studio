@@ -22,6 +22,35 @@ $column-slider-width: 730px
         padding: 0
         background: 0
         border: 0
+        opacity: 0.5
+        transition: $transition-default
+        &:focus, &:hover, &:active, &_active
+            opacity: 1
+
+        &:hover, &:active
+            transform: scale(1.1)
+
+    &__card-image, &__thumb-image
+        overflow: hidden     
+
+    &__card-image
+        width: 350px
+        height: 385px
+        background-color: $image-holder 
+        img
+            height: 100%
+
+    &__thumb-image
+        height: 100%
+        width: 100%
+        margin-top: 45px
+        height: 860px
+        img
+            height: 100%
+
+
+
+    //Sliders    
 
     &__slider
         &-container
@@ -55,13 +84,7 @@ $column-slider-width: 730px
                         opacity: 0.5
 
 
-    //Custom slider properties for propper display
-
-    &__card-image
-        width: 350px
-        height: 385px
-        margin: 0
-        padding: 0
+    //Custom swiper properties for propper display
     
     .swiper
 
@@ -90,7 +113,6 @@ $column-slider-width: 730px
 
         &-thumb
             margin-top: 45px
-            // margin-left: 30px
             height: 860px
 
             li

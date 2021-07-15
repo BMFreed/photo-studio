@@ -1,26 +1,45 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Thumbs } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 
 function PhotoCardSection(props) {
-    SwiperCore.use([Navigation, Thumbs]);
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    SwiperCore.use([Navigation]);
 
-    const images = props.imageList.map((item, index) => (
+    const [thumb, setThumb] = useState("");
+
+    const handleThumb = (event) => {
+        setThumb(event.target.src);
+    };
+
+    //Checking weither selected category is "All"
+
+    let image_category = [];
+    if (props.title === "All") {
+        image_category = props.allImages;
+    } else {
+        image_category = props.imageList;
+    }
+
+    //Assigning a new initial thumbnail each time the user selects a new section
+    let initial_thumb = image_category[0];
+    useEffect(() => {
+        setThumb(`${process.env.PUBLIC_URL + initial_thumb}`);
+    }, [initial_thumb]);
+
+    const images_listed = image_category.map((item, index) => (
         <SwiperSlide tag="li" key={index}>
-            <img
-                className="services__card-image"
-                src={process.env.PUBLIC_URL + item}
-                alt="client card"
-            />
+            <div className="services__card-image">
+                <img onClick={handleThumb} src={process.env.PUBLIC_URL + item} alt="client card" />
+            </div>
         </SwiperSlide>
     ));
 
     return (
         <div className="services__slider-container container">
+            <h3 className="hidden">{props.title}</h3>
             <div className="swiper-column-container">
                 <Swiper
                     tag="div"
@@ -30,10 +49,8 @@ function PhotoCardSection(props) {
                     spaceBetween={15}
                     navigation={{ prevEl: "#prev", nextEl: "#next" }}
                     grabCursor={true}
-                    id="thumbs"
-                    onSwiper={setThumbsSwiper}
                 >
-                    {images}
+                    {images_listed}
                 </Swiper>
                 <div className="services__slider-buttons">
                     <button id="prev">
@@ -50,15 +67,9 @@ function PhotoCardSection(props) {
                     </button>
                 </div>
             </div>
-            <Swiper
-                tag="div"
-                wrapperTag="ul"
-                className="swiper-thumb"
-                slidesPerView={1}
-                thumbs={{ swiper: thumbsSwiper }}
-            >
-                {images}
-            </Swiper>
+            <div className="services__thumb-image">
+                <img src={thumb} alt="" />
+            </div>
         </div>
     );
 }
