@@ -9,31 +9,54 @@ function PhotoCardSection(props) {
     SwiperCore.use([Navigation]);
 
     const [thumb, setThumb] = useState("");
+    const [category, setCategory] = useState("");
 
     const handleThumb = (event) => {
         setThumb(event.target.src);
     };
 
+    const getCategory = (event) => {
+        let img_src = event.target.src;
+        let image_category = img_src.split("services/")[1];
+        image_category = image_category.split("/")[0];
+        setCategory(image_category);
+    };
+
     //Checking weither selected category is "All"
 
-    let image_category = [];
+    let image_list = [];
     if (props.title === "All") {
-        image_category = props.allImages;
+        image_list = props.allImages;
     } else {
-        image_category = props.imageList;
+        image_list = props.imageList;
     }
 
     //Assigning a new initial thumbnail each time the user selects a new section
-    let initial_thumb = image_category[0];
+    let initial_thumb = image_list[0];
     useEffect(() => {
         setThumb(`${process.env.PUBLIC_URL + initial_thumb}`);
     }, [initial_thumb]);
 
-    const images_listed = image_category.map((item, index) => (
+    const images_listed = image_list.map((item, index) => (
         <SwiperSlide tag="li" key={index}>
-            <div className="services__card-image">
-                <img onClick={handleThumb} src={process.env.PUBLIC_URL + item} alt="client card" />
-            </div>
+            <figure className="services__card">
+                <img
+                    onClick={handleThumb}
+                    onMouseEnter={getCategory}
+                    src={process.env.PUBLIC_URL + item}
+                    alt="client card"
+                />
+                <div className="services__card-info-container">
+                    <figcaption className="services__card-info">
+                        <h4 className="services__card-category button margin-reset">{category}</h4>
+                        <a href="##" className="services__card-link link">
+                            <span>Check Service</span>
+                            <img src={process.env.PUBLIC_URL + "/img/ui/arrow_10880.png"} alt="check" />
+                        </a>
+                    </figcaption>
+                    <div className="services__card-overlay"></div>
+                </div>
+            </figure>
         </SwiperSlide>
     ));
 
@@ -68,7 +91,7 @@ function PhotoCardSection(props) {
                 </div>
             </div>
             <div className="services__thumb-image">
-                <img src={thumb} alt="" />
+                <img src={thumb} alt="Thumbnail" />
             </div>
         </div>
     );

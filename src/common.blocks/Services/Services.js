@@ -4,6 +4,11 @@ import PhotoCardSection from "./__PhotoCardSection/PhotoCardSection";
 function Services(props) {
     const service = props.data.services;
 
+    const [activeTab, setActiveTab] = useState(0); //Sets "All" as the default display option
+    const handleActiveTab = (event) => {
+        setActiveTab(event.target.id);
+    };
+
     //Dynamically rendering an array of all images by collecting them from each category.
 
     //Assigned a variable to prevent memory overflow.
@@ -18,7 +23,7 @@ function Services(props) {
         return arr;
     }
 
-    //Now let's shuffle our array a bit so that the user can see when he switches to another section from "All"
+    //Now let's shuffle our array a bit so that the user can see when he switches to the neighbouring section from "All"
 
     function shuffle(arr) {
         let random_value, temp_array;
@@ -33,11 +38,6 @@ function Services(props) {
 
     collectAllImages(all);
     shuffle(all);
-
-    const [activeTab, setActiveTab] = useState(0); //Sets "All" as the default display option
-    const handleActiveTab = (event) => {
-        setActiveTab(event.target.id);
-    };
 
     //This chunk of code is used to make the active button appear black on selection.
 
