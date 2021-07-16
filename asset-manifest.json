@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/photo-studio/static/css/main.2c22d746.chunk.css",
-    "main.js": "/photo-studio/static/js/main.45c39c52.chunk.js",
-    "main.js.map": "/photo-studio/static/js/main.45c39c52.chunk.js.map",
-    "runtime-main.js": "/photo-studio/static/js/runtime-main.91a8aed6.js",
-    "runtime-main.js.map": "/photo-studio/static/js/runtime-main.91a8aed6.js.map",
-    "static/js/2.a4b36489.chunk.js": "/photo-studio/static/js/2.a4b36489.chunk.js",
-    "static/js/2.a4b36489.chunk.js.map": "/photo-studio/static/js/2.a4b36489.chunk.js.map",
-    "static/js/3.c624c17d.chunk.js": "/photo-studio/static/js/3.c624c17d.chunk.js",
-    "static/js/3.c624c17d.chunk.js.map": "/photo-studio/static/js/3.c624c17d.chunk.js.map",
+    "main.css": "/photo-studio/static/css/main.ced8a7f3.chunk.css",
+    "main.js": "/photo-studio/static/js/main.50401e8e.chunk.js",
+    "main.js.map": "/photo-studio/static/js/main.50401e8e.chunk.js.map",
+    "runtime-main.js": "/photo-studio/static/js/runtime-main.094a1b4f.js",
+    "runtime-main.js.map": "/photo-studio/static/js/runtime-main.094a1b4f.js.map",
+    "static/css/2.7e9ec4d8.chunk.css": "/photo-studio/static/css/2.7e9ec4d8.chunk.css",
+    "static/js/2.b687bd7d.chunk.js": "/photo-studio/static/js/2.b687bd7d.chunk.js",
+    "static/js/2.b687bd7d.chunk.js.map": "/photo-studio/static/js/2.b687bd7d.chunk.js.map",
+    "static/js/3.5263aa25.chunk.js": "/photo-studio/static/js/3.5263aa25.chunk.js",
+    "static/js/3.5263aa25.chunk.js.map": "/photo-studio/static/js/3.5263aa25.chunk.js.map",
     "index.html": "/photo-studio/index.html",
-    "static/css/main.2c22d746.chunk.css.map": "/photo-studio/static/css/main.2c22d746.chunk.css.map",
-    "static/js/2.a4b36489.chunk.js.LICENSE.txt": "/photo-studio/static/js/2.a4b36489.chunk.js.LICENSE.txt",
+    "static/css/2.7e9ec4d8.chunk.css.map": "/photo-studio/static/css/2.7e9ec4d8.chunk.css.map",
+    "static/css/main.ced8a7f3.chunk.css.map": "/photo-studio/static/css/main.ced8a7f3.chunk.css.map",
+    "static/js/2.b687bd7d.chunk.js.LICENSE.txt": "/photo-studio/static/js/2.b687bd7d.chunk.js.LICENSE.txt",
     "static/media/App.sass": "/photo-studio/static/media/Tahu.32be0a0d.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.91a8aed6.js",
-    "static/js/2.a4b36489.chunk.js",
-    "static/css/main.2c22d746.chunk.css",
-    "static/js/main.45c39c52.chunk.js"
+    "static/js/runtime-main.094a1b4f.js",
+    "static/css/2.7e9ec4d8.chunk.css",
+    "static/js/2.b687bd7d.chunk.js",
+    "static/css/main.ced8a7f3.chunk.css",
+    "static/js/main.50401e8e.chunk.js"
   ]
 }
