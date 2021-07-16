@@ -9,17 +9,9 @@ function PhotoCardSection(props) {
     SwiperCore.use([Navigation]);
 
     const [thumb, setThumb] = useState("");
-    const [category, setCategory] = useState("");
 
     const handleThumb = (event) => {
-        setThumb(event.target.src);
-    };
-
-    const getCategory = (event) => {
-        let img_src = event.target.src;
-        let image_category = img_src.split("services/")[1];
-        image_category = image_category.split("/")[0];
-        setCategory(image_category);
+        setThumb(`${process.env.PUBLIC_URL + event.currentTarget.id}`);
     };
 
     //Checking weither selected category is "All"
@@ -37,21 +29,32 @@ function PhotoCardSection(props) {
         setThumb(`${process.env.PUBLIC_URL + initial_thumb}`);
     }, [initial_thumb]);
 
+    useEffect(() => {
+        console.log("render");
+    }, []);
+
     const images_listed = image_list.map((item, index) => (
         <SwiperSlide tag="li" key={index}>
-            <figure className="services__card">
-                <img
-                    onClick={handleThumb}
-                    onMouseEnter={getCategory}
-                    src={process.env.PUBLIC_URL + item}
-                    alt="client card"
-                />
+            <figure
+                id={item}
+                onClick={handleThumb}
+                // onMouseEnter={getCategory}
+                className="services__card"
+            >
+                <img src={process.env.PUBLIC_URL + item} alt="client card" />
                 <div className="services__card-info-container">
                     <figcaption className="services__card-info">
-                        <h4 className="services__card-category button margin-reset">{category}</h4>
+                        <h4 className="services__card-category button margin-reset">
+                            {/* Getting the category name from the image URL */}
+
+                            {item.split("services/")[1].split("/")[0]}
+                        </h4>
                         <a href="##" className="services__card-link link">
                             <span>Check Service</span>
-                            <img src={process.env.PUBLIC_URL + "/img/ui/arrow_10880.png"} alt="check" />
+                            <img
+                                src={process.env.PUBLIC_URL + "/img/ui/arrow_10880.png"}
+                                alt="check"
+                            />
                         </a>
                     </figcaption>
                     <div className="services__card-overlay"></div>
