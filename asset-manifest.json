@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/photo-studio/static/css/main.ced8a7f3.chunk.css",
-    "main.js": "/photo-studio/static/js/main.26d9f08d.chunk.js",
-    "main.js.map": "/photo-studio/static/js/main.26d9f08d.chunk.js.map",
+    "main.js": "/photo-studio/static/js/main.fe6b2bff.chunk.js",
+    "main.js.map": "/photo-studio/static/js/main.fe6b2bff.chunk.js.map",
     "runtime-main.js": "/photo-studio/static/js/runtime-main.094a1b4f.js",
     "runtime-main.js.map": "/photo-studio/static/js/runtime-main.094a1b4f.js.map",
     "static/css/2.7e9ec4d8.chunk.css": "/photo-studio/static/css/2.7e9ec4d8.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.7e9ec4d8.chunk.css",
     "static/js/2.b687bd7d.chunk.js",
     "static/css/main.ced8a7f3.chunk.css",
-    "static/js/main.26d9f08d.chunk.js"
+    "static/js/main.fe6b2bff.chunk.js"
   ]
 }
