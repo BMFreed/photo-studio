@@ -17,7 +17,7 @@ function Banner() {
             </div>
             <img
                 src={process.env.PUBLIC_URL + "/img/main_image/main_image.jpg"}
-                alt="Main image"
+                alt="Main"
                 className="banner__img"
             />
         </section>

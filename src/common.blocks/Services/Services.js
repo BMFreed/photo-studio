@@ -1,12 +1,28 @@
 import { useState, useEffect, useRef } from "react";
+import { useSpring } from "react-spring";
 import PhotoCardSection from "./__PhotoCardSection/PhotoCardSection";
 
 function Services(props) {
     const service = props.data.services;
 
-    const [activeTab, setActiveTab] = useState(0); //Sets "All" as the default display option
+    //React-Spring code
+
+    //This is a mouse hover listener. The animation won't trigger if the user doesn't hover his mouse over the images.
+    const [toggle, setToggle] = useState(false);
+
+    const section_animation = useSpring({
+        from: { opacity: 0.8, transform: "translateY(40px)" },
+        to: { opacity: 1, transform: "translateY(0px)" },
+        config: { duration: 300 },
+        reset: toggle ? true : false,
+    });
+
+    const [activeTab, setActiveTab] = useState(0); 
+    //Sets "All" as the default display option
+
     const handleActiveTab = (event) => {
         setActiveTab(event.target.id);
+        setToggle(true);
     };
 
     //Dynamically rendering an array of all images by collecting them from each category.
@@ -66,7 +82,11 @@ function Services(props) {
                 <h2 className="services__header header-secondary margin-reset">
                     Our professional services
                 </h2>
-                <ul ref={button} className="services__select-type u-list">
+                <ul
+                    ref={button}
+                    className="services__select-type u-list"
+                    onMouseLeave={() => setToggle(false)}
+                >
                     {service_type_list}
                 </ul>
             </div>
@@ -74,6 +94,7 @@ function Services(props) {
                 title={service[activeTab].name}
                 imageList={service[activeTab].imageList}
                 allImages={all}
+                sectionAnimation={section_animation}
             />
         </section>
     );
