@@ -7,14 +7,11 @@ function Services(props) {
 
     //React-Spring code
 
-    //This is a mouse hover listener. The animation won't trigger if the user doesn't hover his mouse over the images.
-    const [toggle, setToggle] = useState(false);
-
     const section_animation = useSpring({
         from: { opacity: 0.8, transform: "translateY(40px)" },
         to: { opacity: 1, transform: "translateY(0px)" },
         config: { duration: 300 },
-        reset: toggle ? true : false,
+        reset: true
     });
 
     const [activeTab, setActiveTab] = useState(0); 
@@ -22,7 +19,6 @@ function Services(props) {
 
     const handleActiveTab = (event) => {
         setActiveTab(event.target.id);
-        setToggle(true);
     };
 
     //Dynamically rendering an array of all images by collecting them from each category.
@@ -85,7 +81,6 @@ function Services(props) {
                 <ul
                     ref={button}
                     className="services__select-type u-list"
-                    onMouseLeave={() => setToggle(false)}
                 >
                     {service_type_list}
                 </ul>
