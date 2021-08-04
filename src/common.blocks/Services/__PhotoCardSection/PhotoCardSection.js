@@ -45,7 +45,7 @@ function PhotoCardSection(props) {
         <SwiperSlide tag="li" key={index}>
             <figure id={item} onClick={handleThumb} className="services__card">
                 <img src={process.env.PUBLIC_URL + item} alt="client card" />
-                <div className="services__card-info-container hidden">
+                <div className="services__card-info-container">
                     <figcaption className="services__card-info">
                         <h4 className="services__card-category button margin-reset">
                             {/* Getting the category name from the image URL */}
@@ -83,12 +83,13 @@ function PhotoCardSection(props) {
                     navigation={{ prevEl: "#prev", nextEl: "#next" }}
                     grabCursor={true}
                     breakpoints={{
+                        "640": {
+                            "slidesPerView": 5,
+                            "slidesPerColumn" : 1
+                        },
                         "1601": {
                             "slidesPerColumn" : 2,
                             "slidesPerView": 2
-                        },
-                        "640": {
-                            "slidesPerView": 5
                         }
                     }}
                 >

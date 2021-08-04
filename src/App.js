@@ -23,18 +23,18 @@ import blog_entries from './json.data/blog_entries.json';
 function App() {
   return (
     <div className="wrapper">
-      <Header/>
+      {/* <Header/> */}
       <main className="display-fix">
-        <Banner/>
+        {/* <Banner/>
         <PricingPlans data={pricing_info}/>
-        <Map/>
+        <Map/> */}
         <Services data={service_photos}/>
-        <MoreInfo/>
+        {/* <MoreInfo/>
         <Clients data={client_list}/>
         <About/>
-        <Blog data={blog_entries}/>
+        <Blog data={blog_entries}/> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
