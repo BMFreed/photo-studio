@@ -75,10 +75,10 @@ function Clients(props) {
                     loop={true}
                     loopFillGroupWithBlank={true}
                     grabCursor={true}
-                    // autoplay={{
-                    //     delay: 10000,
-                    //     disableOnInteraction: true,
-                    // }}
+                    autoplay={{
+                        delay: 10000,
+                        disableOnInteraction: true,
+                    }}
                     breakpoints={{
                         "426": {
                             "slidesPerView": 2,
