@@ -77,13 +77,17 @@ function PhotoCardSection(props) {
                 <Swiper
                     tag="div"
                     wrapperTag="ul"
-                    slidesPerView={4}
+                    slidesPerView={2}
                     slidesPerColumn={1}
                     spaceBetween={15}
                     navigation={{ prevEl: "#prev", nextEl: "#next" }}
                     grabCursor={true}
                     breakpoints={{
-                        "640": {
+                        "641": {
+                            "slidesPerView": 4,
+                            "slidesPerColumn" : 1
+                        },
+                        "961": {
                             "slidesPerView": 5,
                             "slidesPerColumn" : 1
                         },
