@@ -66,19 +66,35 @@ function Clients(props) {
                 <Swiper
                     tag="div"
                     wrapperTag="ul"
-                    slidesPerView={3}
-                    slidesPerGroup={3}
-                    spaceBetween={44}
+                    slidesPerView={1}
+                    slidesPerGroup={1}
+                    spaceBetween={12}
                     pagination={{
                         clickable: true,
                     }}
                     loop={true}
                     loopFillGroupWithBlank={true}
                     grabCursor={true}
-                    autoplay={{
-                        delay: 10000,
-                        disableOnInteraction: true,
-                    }}>
+                    // autoplay={{
+                    //     delay: 10000,
+                    //     disableOnInteraction: true,
+                    // }}
+                    breakpoints={{
+                        "426": {
+                            "slidesPerView": 2,
+                            "slidesPerGroup": 2
+                        },
+                        "769": {
+                            "slidesPerView": 3,
+                            "slidesPerGroup": 3
+                        },
+                        "1601": {
+                            "spaceBetween": 44,
+                            "slidesPerView": 3,
+                            "slidesPerGroup": 3
+                        }
+                    }}
+                    >
                     {client}
                 </Swiper>
             </div>
