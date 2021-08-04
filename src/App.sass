@@ -82,6 +82,12 @@ $transition-default: all 0.15s 0s ease
     color: $accent
     background-color: $primary
 
+    @media (max-width: 1024px)
+        font-size: $main_font-size - 2px
+
+    @media (max-width: 425px)
+        font-size: $main_font-size - 4px
+
 .display-fix
     display: flex
     flex-direction: column
@@ -99,9 +105,16 @@ $transition-default: all 0.15s 0s ease
         size: 60px
 
 .header-secondary
+    text-align: center
     font:
         size: 50px
         weight: 600
+
+    @media (max-width: 1024px)
+        font-size: 40px
+
+    @media (max-width: 425px)
+        font-size: 30px
 
 .margin-reset
     margin: 0
@@ -126,6 +139,10 @@ $transition-default: all 0.15s 0s ease
     padding: 
         top: 15px
         bottom: 15px
+    transition: $transition-default
+
+    &:hover
+        background-color: darken($accent_bright, 16%)
 
 .hidden
     display: none
