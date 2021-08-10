@@ -8,12 +8,9 @@
     overflow: hidden
 
     &__border
-        width: 1868px
-        height: 359px
+        width: 98%
+        height: 90%
         border: 2px solid transparentize($primary, 0.84)
-        margin: 
-            left: $noclip/3
-            right: $noclip/3
         position: relative
         z-index: 1
 
@@ -23,10 +20,19 @@
         justify-content: space-between
         position: relative
 
+        @media (max-width: 1023px)
+            flex-direction: column
+            justify-content: center
+            row-gap: 40px
+
     &__header
         min-width: 672px
         max-width: 1400px
         margin-right: $noclip
+
+        @media (max-width: 1023px)
+            margin-right: unset
+            min-width: unset
 
     &__btn
         white-space: nowrap
