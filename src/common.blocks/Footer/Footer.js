@@ -85,18 +85,39 @@ function Footer() {
                             </a>
                             <a
                                 className="footer__contact-link link"
-                                href="mailto:smile@studio-inc.com">
+                                href="mailto:smile@studio-inc.com"
+                            >
                                 smile@studio-inc.com
                             </a>
                         </p>
                     </section>
                     <section className="footer__sm">
                         <ul className="footer__sm-list u-list">
-                            <li>Facebook</li>
-                            <li>Instagram</li>
-                            <li>Linkedin</li>
-                            <li>Google Rating</li>
-                            <li>Yelp</li>
+                            <li>
+                                <a href="##" className="link">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##" className="link">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##" className="link">
+                                    Linkedin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##" className="link">
+                                    Google Rating
+                                </a>
+                            </li>
+                            <li>
+                                <a href="##" className="link">
+                                    Yelp
+                                </a>
+                            </li>
                         </ul>
                     </section>
                 </div>
