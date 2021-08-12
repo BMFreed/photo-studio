@@ -2,7 +2,10 @@
     &__list
         padding-top: 100px
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr))
+
+        @media (max-width: 425px)
+            padding-top: 0
         
     &__plan
         @extend %flex
@@ -28,6 +31,9 @@
         font-size: 30px
         text-transform: uppercase
 
+        @media (max-width: 374px)
+            font-size: 24px
+
     &__perks
         list-style: none
         text-align: center
@@ -44,6 +50,12 @@
         min-width: 49px
         font-weight: 700
         opacity: 0.2
+
+        @media (max-width: 425px)
+            font-size: 60px
+
+        @media (max-width: 374px)
+            font-size: 50px
 
     &__btn
         margin-bottom: 102px

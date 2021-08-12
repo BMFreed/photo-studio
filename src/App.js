@@ -28,11 +28,11 @@ function App() {
                 <Banner />
                 <PricingPlans data={pricing_info} />
                 <Map />
-                <Services data={service_photos} />
+                {/* <Services data={service_photos} />
                 <MoreInfo />
                 <Clients data={client_list} />
                 <About />
-                <Blog data={blog_entries} />
+                <Blog data={blog_entries} /> */}
             </main>
             <Footer />
         </div>
