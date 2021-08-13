@@ -11,7 +11,7 @@ function Banner() {
                 <p className="banner__paragraph-small margin-reset">
                     #1 Rated Headshot Photographers.
                 </p>
-                <a className="banner__btn button link" href="##">
+                <a className="banner__btn button link" href="#modal">
                     Browse Sessions
                 </a>
             </div>

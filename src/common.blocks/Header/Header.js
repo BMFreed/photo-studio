@@ -115,7 +115,7 @@ function Header() {
                     </ul>
                 </div>
                 <div className="header__right-content">
-                    <a className="header__btn button link" href="##">
+                    <a className="header__btn button link" href="#modal">
                         Book Now
                     </a>
                     <button className="header__mobile-menu header__links" onClick={handleOpenLinks}>
@@ -123,7 +123,7 @@ function Header() {
                     </button>
                     <ul className="header__sm-list u-list" ref={linksRef}>
                         <li onClick={() => setOpenLinks(!openLinks)}>
-                            <a href="##" className="link header__sm-link">
+                            <a href="#modal" className="link header__sm-link">
                                 <span>Facebook</span>
                                 <img
                                     src={process.env.PUBLIC_URL + "/img/social_media/fb_11189.png"}
@@ -133,7 +133,7 @@ function Header() {
                         </li>
                         <li>
                             <a
-                                href="##"
+                                href="#modal"
                                 className="link header__sm-link"
                                 onClick={() => setOpenLinks(!openLinks)}
                             >
@@ -146,7 +146,7 @@ function Header() {
                         </li>
                         <li>
                             <a
-                                href="##"
+                                href="#modal"
                                 className="link header__sm-link"
                                 onClick={() => setOpenLinks(!openLinks)}
                             >
@@ -159,7 +159,7 @@ function Header() {
                         </li>
                         <li>
                             <a
-                                href="##"
+                                href="#modal"
                                 className="link header__sm-link"
                                 onClick={() => setOpenLinks(!openLinks)}
                             >
@@ -172,7 +172,7 @@ function Header() {
                         </li>
                         <li>
                             <a
-                                href="##"
+                                href="#modal"
                                 className="link header__sm-link"
                                 onClick={() => setOpenLinks(!openLinks)}
                             >
