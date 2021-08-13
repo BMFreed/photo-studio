@@ -17,7 +17,7 @@ function Modal() {
         event.preventDefault();
         setModal(false);
         location.hash = "";
-        window.location.hash = "";
+        window.location.hash = "/";
         console.log(window.location);
     };
 
