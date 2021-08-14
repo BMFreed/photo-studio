@@ -30,12 +30,12 @@ function Modal() {
                 </p>
                 <ul className="modal__sm u-list">
                     <li>
-                        <a href="https://vk.com/id164679156" target="_blank">
+                        <a href="https://vk.com/id164679156" target="_blank" rel="noreferrer">
                             <img src={process.env.PUBLIC_URL + "/img/Modal/vk.png"} alt="VK" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://t.me/BMFreed" target="_blank">
+                        <a href="https://t.me/BMFreed" target="_blank" rel="noreferrer">
                             <img
                                 src={process.env.PUBLIC_URL + "/img/Modal/telegram.png"}
                                 alt="Telegram"
@@ -43,7 +43,7 @@ function Modal() {
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:badmofo14@gmail.com" target="_blank">
+                        <a href="mailto:badmofo14@gmail.com" target="_blank" rel="noreferrer">
                             <img
                                 src={process.env.PUBLIC_URL + "/img/Modal/email.png"}
                                 alt="Email"
@@ -54,6 +54,7 @@ function Modal() {
                         <a
                             href="https://www.linkedin.com/in/bogdan-binitskiy-140bb5212/"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <img
                                 style={{ height: "28px", width: "auto" }}
