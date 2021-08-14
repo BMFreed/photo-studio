@@ -15,7 +15,7 @@ function Plan(props) {
             />
             <h3 className='pricing-plans__title margin-reset'>{props.title}</h3>
             <ol className='pricing-plans__perks'>{perks}</ol>
-            <a className='pricing-plans__btn button link' href='##'>
+            <a className='pricing-plans__btn button link' href='#modal'>
                 See more
             </a>
         </li>

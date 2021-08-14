@@ -6,7 +6,7 @@ function About() {
                     <h2 className="about__header header-secondary margin-reset">
                         Fast, convenient &amp; friendly <br /> professional headshot sessions.
                     </h2>
-                    <a className="about__btn button link" href="##">
+                    <a className="about__btn button link" href="#modal">
                         About Us
                     </a>
                 </div>

@@ -13,6 +13,7 @@ import Clients from "./common.blocks/Clients/Clients";
 import About from "./common.blocks/About/About";
 import Blog from "./common.blocks/Blog/Blog";
 import Footer from "./common.blocks/Footer/Footer";
+import Modal from "./common.blocks/Modal/Modal";
 
 // Json import
 import pricing_info from "./json.data/pricing_info.json";
@@ -23,7 +24,8 @@ import blog_entries from "./json.data/blog_entries.json";
 function App() {
     return (
         <div className="wrapper">
-            <Header/>
+            <Modal />
+            <Header />
             <main className="display-fix">
                 <Banner />
                 <PricingPlans data={pricing_info} />

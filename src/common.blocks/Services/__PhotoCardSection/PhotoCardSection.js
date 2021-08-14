@@ -52,7 +52,7 @@ function PhotoCardSection(props) {
 
                             {item.split("services/")[1].split("/")[0]}
                         </h4>
-                        <a href="##" className="services__card-link link">
+                        <a href="#modal" className="services__card-link link">
                             <span>Check Service</span>
                             <img
                                 src={process.env.PUBLIC_URL + "/img/ui/arrow_10880.png"}

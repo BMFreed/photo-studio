@@ -7,7 +7,12 @@ function Map() {
                     <label htmlFor="search-studio">Search for your professional by zip code:</label>
                     <div className="map__inputs">
                         <input className="map__search-input" type="text" id="search-studio" />
-                        <input className="map__btn button" type="submit" value="Search" />
+                        <input
+                            className="map__btn button"
+                            type="submit"
+                            value="Search"
+                            onClick={(event) => event.preventDefault()}
+                        />
                     </div>
                 </form>
             </div>
@@ -17,7 +22,8 @@ function Map() {
                 width="100%"
                 height="450"
                 loading="lazy"
-                title="Map"></iframe>
+                title="Map"
+            ></iframe>
         </section>
     );
 }
