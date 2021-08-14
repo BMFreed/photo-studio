@@ -18,6 +18,7 @@ function Modal() {
         setModal(false);
         location.hash = "";
         window.location.hash = "/";
+        console.log(window.location);
     };
 
     if (!modal) return null;
