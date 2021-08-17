@@ -3,6 +3,10 @@
 Hello! I have created this website with React JS, SASS and Swiper slider library. I have used an existing PSD layout.
 Here is a list of features I would like to point out for you to better understand the workflow and the end result:
 
+## Github Pages
+
+You can view the website right now in real time via Github Pages: https://bmfreed.github.io/photo-studio/
+
 ## Fully responsive layout
 
 Though the original PSD file contained only one layout type (for large desktop screens), I have come up with my own set of solutions to optimize it for any device possible.
