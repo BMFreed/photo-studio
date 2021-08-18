@@ -1,7 +1,9 @@
 # This website was created with React
 
 Hello! I have created this website with React JS, SASS and Swiper slider library. I have used an existing PSD layout.
+
 You can check the layout here: https://psd.in.ua/maket-dlya-sajta-foto-studii/
+
 Here is a list of features I would like to point out for you to better understand the workflow and the end result:
 
 ## Github Pages
